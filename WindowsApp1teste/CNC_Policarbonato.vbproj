@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1181E865-1E5B-45FF-99C7-774613BE84D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApp1teste.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApp1teste</RootNamespace>
+    <AssemblyName>WindowsApp1teste</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApp1teste.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApp1teste.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="netDxf, Version=2022.11.2.0, Culture=neutral, PublicKeyToken=618c63290969e781, processorArchitecture=MSIL">
+      <HintPath>..\packages\netDxf.2022.11.2\lib\net45\netDxf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data_Base_Plataform.Designer.vb">
+      <DependentUpon>Data_Base_Plataform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Base_Plataform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data_serverDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>data_serverDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="form_camara.Designer.vb">
+      <DependentUpon>form_camara.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_camara.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_laser_automatic.Designer.vb">
+      <DependentUpon>Form_laser_automatic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_laser_automatic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_laser_manual.Designer.vb">
+      <DependentUpon>Form_laser_manual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_laser_manual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_milling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_milling.Designer.vb">
+      <DependentUpon>Form_milling.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="load_gcode_internally.Designer.vb">
+      <DependentUpon>load_gcode_internally.vb</DependentUpon>
+    </Compile>
+    <Compile Include="load_gcode_internally.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log_register.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="save_gcode.Designer.vb">
+      <DependentUpon>save_gcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="save_gcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selecao_modo.designer.vb">
+      <DependentUpon>selecao_modo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selecao_modo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="variables.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data_Base_Plataform.resx">
+      <DependentUpon>Data_Base_Plataform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_camara.resx">
+      <DependentUpon>form_camara.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_laser_automatic.resx">
+      <DependentUpon>Form_laser_automatic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_laser_manual.resx">
+      <DependentUpon>Form_laser_manual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_milling.resx">
+      <DependentUpon>Form_milling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="load_gcode_internally.resx">
+      <DependentUpon>load_gcode_internally.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="save_gcode.resx">
+      <DependentUpon>save_gcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selecao_modo.resx">
+      <DependentUpon>selecao_modo.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="data_serverDataSet.xsc">
+      <DependentUpon>data_serverDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="data_serverDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>data_serverDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="data_serverDataSet.xss">
+      <DependentUpon>data_serverDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\corte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_Extract_Cem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_Extract_Cem_cantos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_Extract_Cem_cantosmeios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_Extract_Sem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_Extract_Sem_cantos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_Extract_Sem_cantosmeios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_Sem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_Sem_cantos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_Sem_cantosmeios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_Extract_Cem_meios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_Extract_Sem_meios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_Sem_meios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_U_Sem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_U_Sem_cantos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_U_Sem_cantosmeios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Corte_U_Sem_meios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Mach4">
+      <Guid>{316FD4DD-E21C-4672-A938-0B36276C54A0}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data_server.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data_server_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>data_server.mdf</DependentUpon>
+    </Content>
+    <Content Include="Resources\dimensoes_slot.png" />
+    <None Include="Resources\dimensoes_slot1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

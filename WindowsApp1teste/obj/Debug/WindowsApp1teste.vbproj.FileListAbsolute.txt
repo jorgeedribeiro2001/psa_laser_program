@@ -1,0 +1,14 @@
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\bin\Debug\WindowsApp1teste.exe.config
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\bin\Debug\WindowsApp1teste.exe
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\bin\Debug\WindowsApp1teste.pdb
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\bin\Debug\WindowsApp1teste.xml
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\obj\Debug\WindowsApp1teste.vbproj.AssemblyReference.cache
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\obj\Debug\Interop.Mach4.dll
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\obj\Debug\WindowsApp1teste.vbproj.ResolveComReference.cache
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\obj\Debug\WindowsApp1teste.Form1.resources
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\obj\Debug\WindowsApp1teste.Resources.resources
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\obj\Debug\WindowsApp1teste.vbproj.GenerateResource.cache
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\obj\Debug\WindowsApp1teste.vbproj.CoreCompileInputs.cache
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\obj\Debug\WindowsApp1teste.exe
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\obj\Debug\WindowsApp1teste.xml
+C:\Users\Luis Verdasca\source\repos\WindowsApp1teste\WindowsApp1teste\obj\Debug\WindowsApp1teste.pdb

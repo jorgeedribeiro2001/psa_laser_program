@@ -2,9 +2,7 @@
 
 ## Software Development Project
 
-The program was created using the Visual Basic language of Visual Studio with the purpose of acting as an interface for Mach3 and laser control. The Visual Studio project can be found at the following GitHub link:
-
-[GitHub - PSA Laser Program](https://github.com/jorgeedribeiro2001/psa_laser_program)
+The program was created using the Visual Basic language of Visual Studio with the purpose of acting as an interface for Mach3 and laser control.
 
 ### Prerequisites
 
@@ -24,16 +22,12 @@ You can configure SQL Server to include the database provided in the installatio
 
 Remember that these instructions are general and may vary depending on the operating system and specific versions of the programs.
 
-C. Patoilo, D. Marques, J. Fitas, J. Ribeiro Report PSA Degree
-
-[GitHub - PSA Laser Program](https://github.com/jorgeedribeiro2001/psa_laser_program)
-
 ### Identification of Features
 
 This program includes the following features:
 
 1. Manual control mode for the Laser:
-    - Allows manual adjustment of equipment settings in real-time.
+    - Allows manual adjustment of equipment settings in real time.
 
 2. Logging of laser usage hours and users:
     - Stored in a SQL database hosted in the Microsoft Azure cloud.
@@ -50,10 +44,6 @@ This program includes the following features:
 
 6. Addition of templates with rectangles with rounded corners, slots, and holes:
     - Possibility to create patterns on the x and y axes in the holes, increasing flexibility and agility in project creation.
-
-These features enhance the efficiency and practicality of the Laser control system, resulting in better control and management of work performed, as well as increased productivity and work quality.
-
-C. Patoilo, D. Marques, J. Fitas, J. Ribeiro Report PSA Degree
 
 ### Program Organisation / Interface
 
@@ -104,8 +94,6 @@ It is noted that the universal relationship R(Username, Time, Name, Password, Co
 Figure 2.25: Normalized Functional Dependency Diagram of Sub-Relations
 
 It can be stated that all sub-relations are now normalized. Next, the necessary tables were created: For the first sub-relation, table gcode programs, for the second sub-relation, user history, and the third, table users.
-
-C. Patoilo, D. Marques, J. Fitas, J. Ribeiro Report PSA Degree
 
 ## Development
 - Software Development Project
